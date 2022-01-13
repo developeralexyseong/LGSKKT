@@ -1,8 +1,4 @@
 import React, { useState } from 'react';
-
-// v5 react-router-dom
-// import { useHistory } from 'react-router-dom';
-// https://www.digitalocean.com/community/tutorials/react-react-router-v6
 // https://stackoverflow.com/questions/65948671/how-to-go-back-to-previous-route-in-react-router-dom-v6
 import { useNavigate } from 'react-router-dom';
 
@@ -115,21 +111,6 @@ function BoardWrite() {
 						value={board.imageFile}
 					/>
 				</Box>
-				{/*}
-                <TextField
-					variant="outlined"
-					margin="normal"
-					accep
-                    type="file"
-					fullWidth
-					value={board.imageFile}
-					onChange={e => {
-						let tempBoard = {...board};
-						tempBoard.imageFile = e.target.files[0];
-						setBoard(tempBoard);
-					}}
-				/>
-				*/}
 				<Button
 					type="button"
 					fullWidth

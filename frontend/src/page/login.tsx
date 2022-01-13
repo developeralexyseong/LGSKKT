@@ -55,7 +55,7 @@ function Login() {
 		<Container component="main" maxWidth="xs">
 			<div className={classes.paper}>
 				<Typography component="h1" variant="h5">
-				로그인을 해주세요.
+				  로그인을 해주세요.
 				</Typography>
 				<form className={classes.form} noValidate method='post'>
 					<TextField
@@ -63,7 +63,7 @@ function Login() {
 						margin="normal"
 						required
 						fullWidth
-						label="이메일 주소"
+						label="이메일"
 						autoFocus
 						value={email}
 						onChange={e => {
@@ -85,7 +85,7 @@ function Login() {
 					<Button type="button" fullWidth variant="contained" color="primary" className={classes.button} onClick={onSubmit}>로그인</Button>
 					<Button type="button" fullWidth variant="contained" color="primary" className={classes.button} onClick={() => navigate('/register')}>회원가입</Button>
 					{error !== '' && 
-					<Box color={'#FF0000'} padding={1}>
+					<Box color={'#f37e7e'} padding={1}>
 						{
 							error === 'email not exist' ? '이메일 주소가 일치하지 않습니다.' : 
 							error === 'password incorrect' ? '비밀번호가 일치하지 않습니다.' :
